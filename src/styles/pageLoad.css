@@ -21,3 +21,8 @@ html{
     border-radius: 10px;
     color: white;
 }
+
+header{
+    padding: 10px;
+    background-color: #076CFA;
+}
