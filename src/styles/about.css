@@ -1,0 +1,18 @@
+.about{
+    min-height: 65vh;
+    width: 75vw;
+    background-color: #9AB8CF;
+    border-radius: 35px;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text{
+    white-space: pre-line;
+    color: white;
+    font-size: 1.5rem;
+}

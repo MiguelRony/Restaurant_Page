@@ -30,7 +30,7 @@ const menu = function(prevPage){
         content.appendChild(imgContainer);
     }
     
-    for (let i = 0; i < 5; i++){
+    for (let i = 0; i < 10; i++){
         menu.appendChild(createCard());
     }
 }
