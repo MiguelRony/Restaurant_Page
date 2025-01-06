@@ -5,20 +5,25 @@ import about from './pages/about.js';
 const pageLoad = function(){
     home();
 
+    let prevPage = 'home';
+
     const homeButton = document.querySelector('#home');
     const menuButton = document.querySelector('#menu');
     const aboutButton = document.querySelector('#about');
 
     homeButton.addEventListener('click', function(){
-        home();
+        home(prevPage);
+        prevPage = 'home';
     });
 
     menuButton.addEventListener('click', function(){
-        menu();
+        menu(prevPage);
+        prevPage = 'menu';
     });
 
     aboutButton.addEventListener('click', function(){
-        about();
+        about(prevPage);
+        prevPage = 'about';
     });
 }
 

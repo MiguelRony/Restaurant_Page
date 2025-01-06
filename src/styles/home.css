@@ -1,24 +1,74 @@
+@font-face {
+    font-family: 'Anton';
+    src: url('../utils/Fonts/Anton/Anton-Regular.ttf') format('ttf');
+}
+
 .home{
-    height: 75%;
-    width: 75%;
+    height: 65vh;
+    width: 75vw;
+    padding: 10px;
     background-color: #9AB8CF;
     border-radius: 35px;
 
-    display: flex;
+    /* display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 }
 
 .home h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 3rem;
-    color: white;
+    justify-self: center;
+    font-family: 'SixtyFour';
+    font-size: 2rem;
+    color: black;
 }
 
 .home p{
     padding: 10px;
-    border: 2px solid black;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: 'Anton'; */
+    font-weight: bolder;
+    color: #503813;
     font-size: 1.5rem;
-    color: white;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    height: 500px;
+  }
+  
+.sliding-monster {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 300px;
+   animation: slide-vert 0.5s linear;
+ }
+
+ .sliding-cookie {
+   position: absolute;
+   top: 70px;
+   left: 0;
+   width: 150px;
+   animation: slide-hor 0.5s linear;
+}
+  
+@keyframes slide-vert {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+
+@keyframes slide-hor {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
 }
