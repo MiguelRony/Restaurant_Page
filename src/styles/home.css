@@ -3,6 +3,10 @@
     src: url('../utils/Fonts/Anton/Anton-Regular.ttf') format('ttf');
 }
 
+#content{
+    position: relative;
+}
+
 .home{
     min-height: 65vh;
     width: 75vw;
@@ -34,8 +38,8 @@
     width: 100%;
     overflow: hidden;
     position: absolute;
-    bottom: 0;
-    height: 500px;
+    top: 0;
+    height: 100%;
   }
   
 .sliding-monster {
